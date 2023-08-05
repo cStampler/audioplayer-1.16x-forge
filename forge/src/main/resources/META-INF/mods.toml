@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[36,)"
+issueTrackerURL = "https://github.com/cStampler"
+license = "GPLv3"
+
+[[mods]]
+modId = "${id}"
+version = "1.0"
+displayName = "audioplayer"
+authors = "CStampler"
+credits = "cityroleplay,etched for rough design"
+description = "Allow music to be played using special jukeboxes!"
+displayURL= "https://github.com/cStampler"
+logoFile = "logo.png"
+
+[modproperties.${id}]
+catalogueImageIcon="icon.png"
+
+[[dependencies.${id}]]
+modId = "forge"
+mandatory = true
+versionRange = "[36.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${id}]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.16.5,1.17)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${id}]]
+modId = "pollen"
+mandatory = true
+versionRange = "[1.4.0,2.0.0)"
+ordering = "BEFORE"
+side = "BOTH"
